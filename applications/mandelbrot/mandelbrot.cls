@@ -18,7 +18,7 @@ Sub mandelbrot()
     Dim i As Long, j As Long
     Dim iter As Long
     Dim c1 As Double, c2 As Double
-    Dim z1 As Double, z2 As Double, za_temp As Double
+    Dim z1 As Double, z2 As Double, z1_temp As Double
     Dim x As Double, y As Double
     Dim hx As Double, hy As Double
     
