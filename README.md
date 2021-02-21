@@ -18,18 +18,18 @@
 
 * セルを正方形にする
 	```bas
-  Sub main()
-  	Dim pt As Double
-  	Dim i As Long
-  	Dim a As Double, b As Double
-    
-  	pt = Application.CentimetersToPoints(1)
-    
-  	For i = 1 To 5
-    	a = Range("A1").ColumnWidth / Range("A1").Width
-    	b = Range("A1").RowHeight / Range("A1").Height
-    	Range("A1").Resize(100, 100).ColumnWidth = pt * a
-    	Range("A1").Resize(100, 100).RowHeight = pt * b
-  	Next i
+	Sub main()
+		Dim pt As Double
+		Dim i As Long
+		Dim a As Double, b As Double
+
+		pt = Application.CentimetersToPoints(1)
+
+		For i = 1 To 5
+			a = Range("A1").ColumnWidth / Range("A1").Width
+			b = Range("A1").RowHeight / Range("A1").Height
+			Range("A1").Resize(100, 100).ColumnWidth = pt * a
+			Range("A1").Resize(100, 100).RowHeight = pt * b
+		Next i
 	End Sub
 	```
