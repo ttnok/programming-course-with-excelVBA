@@ -29,10 +29,9 @@ Sub spiral()
     i = 0: j = 0
     di = 1: dj = 0
     
-    n = 1
-    n_steps = 1
+    n = 1: n_steps = 1
     
-    canvas(i, j) = n
+    canvas(i, j) = " "
     
     Do
         For s = 1 To 2
@@ -50,11 +49,10 @@ Sub spiral()
                     canvas(i, j) = " "
                 End If
                 
-                If n >= L ^ 2 Then
-                    Exit Do
-                End If
+                If n >= L ^ 2 Then Exit Do
             Next t
         Next s
+        
         n_steps = n_steps + 1
     Loop
     
@@ -64,21 +62,17 @@ End Sub
 Function is_prime(n As Long) As Boolean
     Dim i As Long
     
-    i = 1
+    i = 2
     For i = 2 To n - 1
-        If n Mod i = 0 Then
-            Exit For
-        End If
+        If n Mod i = 0 Then Exit For
     Next i
     
-    Debug.Print (i)
-    
-    If i = n Then
-        is_prime = True
-    Else
-        is_prime = False
-    End If
+    is_prime = i = n
 End Function
+
+Sub main()
+    Debug.Print is_prime(13)
+End Sub
 
 Sub setup_canvas()
     Dim pt As Double
