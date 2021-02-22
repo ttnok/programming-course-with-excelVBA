@@ -28,7 +28,7 @@
 - [ ] 一次元ランダムウォーク 
 
 ### 未利用
-- [ ] DLA
+- [ ] DLA（Diffustion-limited aggregation、拡散律速凝集）
 - [x] mandelbrot set
 - [x] Ulam's spiral
 - [ ] レーベンシュタイン距離
