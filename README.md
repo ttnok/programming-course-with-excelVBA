@@ -1,5 +1,8 @@
 # Programming course with excel VBA
 
+プログラミング入門のネタ集です。
+大学の授業で利用済、あるいは利用予定です。
+
 ## memo
 
 * データ入力時に `Debug.Assert` で確認
