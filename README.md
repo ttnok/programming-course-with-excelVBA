@@ -37,7 +37,7 @@
     End Sub
     ```
     
-## VBA 言語使用、参考書など
+## VBA 言語仕様、参考書など
     
 * 公式仕様書 MS-VBAL
   * https://docs.microsoft.com/en-us/openspecs/microsoft_general_purpose_programming_languages/ms-vbal/d5418146-0bd2-45eb-9c7a-fd9502722c74
