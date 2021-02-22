@@ -27,6 +27,7 @@
 - [ ] RGB 画像（ストライプ配列）
 - [ ] Bresenham's algorithm
 - [ ] カーネル密度推定
+- [ ] 有理数の循環分数表示
 
 ## memo
 
