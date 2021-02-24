@@ -31,9 +31,11 @@
 
 ### 未利用
 - [ ] DLA（Diffustion-limited aggregation、拡散律速凝集）
+- [ ] CpG island
 - [x] mandelbrot set
 - [x] Ulam's spiral
 - [ ] レーベンシュタイン距離
+- [ ] LCS（Longest Common Subsequence、最長共通部分列）
 - [ ] 迷路解法
 - [ ] 勾配降下法による最適化
 - [x] RGB 画像（ストライプ配列）
