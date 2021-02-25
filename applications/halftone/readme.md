@@ -2,3 +2,10 @@
 ========================================
 
 ![halftone](./halftone.png)
+
+
+画像取得元
+---------
+wikimedia commons
+
+https://commons.wikimedia.org/wiki/File:Chouju_sumo2.jpg
