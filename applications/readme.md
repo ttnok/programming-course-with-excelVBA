@@ -10,5 +10,5 @@ applications
 templates
 ---------
 
-- [00template1.xlsm](./00template.xlsm)
+- [00template1.xlsm](./00template1.xlsm)
   - 入力部、処理部、出力部の 3 つのパートからなるコードのテンプレート
