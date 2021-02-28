@@ -38,12 +38,10 @@ Sub julia()
     c2 = 0.6
     
     For i = 1 To I_MAX
-        'Debug.Print "i = " & i
         
         For j = 1 To J_MAX
             z1 = X_MIN + (j - 1) * hx
             z2 = Y_MAX - (i - 1) * hy
-            'Debug.Print "j = " & j
             
             For iter = 1 To ITER_MAX
                 z1_temp = z1 ^ 2 - z2 ^ 2 + c1
