@@ -1,4 +1,4 @@
-# Programming course with excel VBA
+# Programming course with Excel VBA
 
 プログラミング入門の題材集です。
 大学の授業で利用済、あるいは利用予定です。
