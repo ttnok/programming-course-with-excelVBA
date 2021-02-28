@@ -3,6 +3,7 @@ applications
 
 - [RGB](./RGB/)
 - [Mandelbrot set](./mandelbrot/)
+- [Julia set](./julia/)
 - [Ulam's spiral](./ulam/)
 - [ハーフトーン処理](./halftone/)
 
