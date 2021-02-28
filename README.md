@@ -33,17 +33,18 @@
 ### 未利用
 - [ ] DLA（Diffustion-limited aggregation、拡散律速凝集）
 - [ ] CpG island
+- [ ] レーベンシュタイン距離
+- [ ] LCS（Longest Common Subsequence、最長共通部分列）
+- [x] RGB 画像（ストライプ配列）
 - [x] Mandelbrot set（マンデルブロ集合）
 - [x] Julia set（ジュリア集合）
 - [x] Ulam's spiral（ウラムの螺旋）
-- [ ] レーベンシュタイン距離
-- [ ] LCS（Longest Common Subsequence、最長共通部分列）
+- [ ] 有理数の循環分数表示
 - [ ] 迷路解法
 - [ ] 勾配降下法による最適化
-- [x] RGB 画像（ストライプ配列）
 - [ ] Bresenham's algorithm（ブレゼンハムのアルゴリズム）
 - [ ] カーネル密度推定
-- [ ] 有理数の循環分数表示
+- [ ] 逆正弦則に従う確率分布
 
 ## memo
 
