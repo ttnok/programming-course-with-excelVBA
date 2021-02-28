@@ -77,6 +77,7 @@
         Next i
     End Sub
     ```
+* [applications フォルダ](./applications/)の 00template2.xlsm にコード例をまとめました。
     
 ## VBA 言語仕様、参考書など
     
