@@ -27,20 +27,21 @@
 - [x] 画像のハーフトーン処理（誤差拡散法）
 - [ ] K-means 法によるクラスタリング
 - [ ] K-means 法による画像の 2 値化
-- [ ] tessellation (affine 変換）
+- [ ] tessellation
 - [ ] 一次元ランダムウォーク 
 
 ### 未利用
 - [ ] DLA（Diffustion-limited aggregation、拡散律速凝集）
 - [ ] CpG island
-- [x] mandelbrot set
-- [x] Ulam's spiral
+- [x] Mandelbrot set（マンデルブロ集合）
+- [x] Julia set（ジュリア集合）
+- [x] Ulam's spiral（ウラムの螺旋）
 - [ ] レーベンシュタイン距離
 - [ ] LCS（Longest Common Subsequence、最長共通部分列）
 - [ ] 迷路解法
 - [ ] 勾配降下法による最適化
 - [x] RGB 画像（ストライプ配列）
-- [ ] Bresenham's algorithm
+- [ ] Bresenham's algorithm（ブレゼンハムのアルゴリズム）
 - [ ] カーネル密度推定
 - [ ] 有理数の循環分数表示
 
