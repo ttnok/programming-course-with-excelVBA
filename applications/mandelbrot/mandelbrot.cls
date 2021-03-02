@@ -7,31 +7,29 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
+Option Explicit
+
 Sub mandelbrot()
     Const I_MAX As Long = 500
     Const J_MAX As Long = 500
     Const X_MIN As Double = -1#, X_MAX As Double = 2.2
     Const Y_MIN As Double = -1.6, Y_MAX As Double = 1.6
+'    Const X_MIN As Double = 0, X_MAX As Double = 0.5
+'    Const Y_MIN As Double = 0.6, Y_MAX As Double = 1.1
     Const ITER_MAX As Long = 100
     
     Dim screen() As Variant
+    ReDim screen(1 To I_MAX, 1 To J_MAX)
     Dim i As Long, j As Long
     Dim iter As Long
     Dim c1 As Double, c2 As Double
     Dim z1 As Double, z2 As Double, z1_temp As Double
-    Dim x As Double, y As Double
     Dim hx As Double, hy As Double
     
     
+    Application.ScreenUpdating = False
     Range("A1").Resize(I_MAX, J_MAX).ClearContents
-    
-    screen = Range("A1").Resize(I_MAX, J_MAX)
-    
-    For i = 1 To I_MAX
-        For j = 1 To J_MAX
-            screen(i, j) = 0
-        Next j
-    Next i
+        
     
     hx = (X_MAX - X_MIN) / (J_MAX - 1)
     hy = (Y_MAX - Y_MIN) / (I_MAX - 1)
@@ -61,3 +59,4 @@ Sub mandelbrot()
     
     Range("A1").Resize(I_MAX, J_MAX) = screen
 End Sub
+
