@@ -6,6 +6,7 @@ applications
 - [Julia set](./julia/)
 - [Ulam's spiral](./ulam/)
 - [ハーフトーン処理](./halftone/)
+- [MNIST データの K-means 法によるクラスタリング](./mnist-kmeans/)
 
 
 templates
