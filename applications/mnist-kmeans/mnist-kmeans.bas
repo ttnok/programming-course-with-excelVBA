@@ -5,6 +5,7 @@ Sub kmeans()
     Debug.Print Time
     
     Const Nclusters As Long = 20
+    Const Niterations As Long = 10
     
     Const Nfigs As Long = 10000
     Const Ddim As Long = 28 ^ 2
@@ -13,8 +14,12 @@ Sub kmeans()
     ReDim data(1 To Nfigs, 1 To Ddim) As Long
     Dim cluster(1 To Nfigs) As Long
     
+    Dim ouput As Variant
+    ReDim output(1 To 28 * Nclusters, 1 To 28 * Niterations) As Long
+
     Dim fig As Long
     Dim c As Long, d As Long
+    Dim i As Long, j As Long
 
 
     Randomize
@@ -36,7 +41,8 @@ Sub kmeans()
 
     
     Dim iteration As Long
-    For iteration = 1 To 10
+    
+    For iteration = 1 To Niterations
         Dim G As Variant, count As Variant
         ReDim G(1 To Nclusters, 1 To Ddim) As Long, count(1 To Nclusters) As Long 'G ÇÕçÇë¨âªÇÃÇΩÇﬂêÆêîå^Ç∆ÇµÇƒêÈåæÅi20Åì íˆìxèàóùéûä‘å∏Åj
         
@@ -55,8 +61,7 @@ Sub kmeans()
             Next c
         Next d
             
-            
-
+        
         Dim dist(1 To Nclusters) As LongLong
         Dim c_min As Long
         
@@ -79,22 +84,22 @@ Sub kmeans()
             cluster(fig) = c_min
         Next fig
 
-    
+        
+        For c = 1 To Nclusters
+            For i = 1 To 28
+                For j = 1 To 28
+                    output(28 * (c - 1) + i, 28 * (iteration - 1) + j) = G(c, 28 * (i - 1) + j)
+                Next j
+            Next i
+        Next c
     Next iteration
     
 
     '
     ' (3)
     '
-    Dim i As Long, j As Long
     
-    For c = 1 To Nclusters
-        For i = 1 To 28
-            For j = 1 To 28
-                Sheets(1).Cells(28 * (c - 1) + i, j) = G(c, 28 * (i - 1) + j)
-            Next j
-        Next i
-    Next c
+    Sheets(1).Range("A1").Resize(28 * Nclusters, 28 * Niterations) = output
     
     
     Debug.Print Time
