@@ -37,6 +37,7 @@
 - [ ] レーベンシュタイン距離
 - [ ] LCS（Longest Common Subsequence、最長共通部分列）
 - [x] RGB 画像（ストライプ配列）
+- [x] Adaptive Threshold（適応的閾値処理）によるグレースケール画像の 2 値化 
 - [x] Mandelbrot set（マンデルブロ集合）
 - [x] Julia set（ジュリア集合）
 - [x] Ulam's spiral（ウラムの螺旋）

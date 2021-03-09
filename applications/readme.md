@@ -7,6 +7,7 @@ applications
 - [Ulam's spiral](./ulam/)
 - [ハーフトーン処理](./halftone/)
 - [MNIST データの K-means 法によるクラスタリング](./mnist-kmeans/)
+- [Adaptive Threshold（適応的閾値処理）によるグレースケール画像の 2 値化](./adaptive_threshold/)
 
 
 templates
